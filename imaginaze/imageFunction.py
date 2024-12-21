@@ -39,7 +39,7 @@ class Imagine(tk.Frame,ImageHandler):
             showerror("Ошибка", "Файл не удалось открыть") # Вывод при ошибоке
 
 
-    #метод обновления лейбла
+    # Метод обновления лейбла
     def update_label(self, img):
         self.img_tk = ImageTk.PhotoImage(img)  # Метод ткинтера
         self.label_photo.config(image=self.img_tk)  # Обновление лейбла
