@@ -31,7 +31,7 @@ class Imagine(tk.Frame,ImageHandler):
     
 
     def load_image_gui(self):
-        self.file_path = fd.askopenfilename(title="Выберите нужный вам формат", filetypes=[("Image Files", "*.png;*.jpg;*.jpeg;*")])  #окно переход в проводник для выбора нужного файла вручную
+        self.file_path = fd.askopenfilename(title="Выберите нужный вам формат", filetypes=[("Image Files", "*.png;*.jpg;*.jpeg;*")])  # Окно переход в проводник для выбора нужного файла вручную
         try:
             self.load_image(self.file_path)
             self.update_label(self.img)  # Вывод на лейбл изображения
